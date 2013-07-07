@@ -16,22 +16,36 @@
 		90E9BE7616C1A63100EC2D36 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 90E9BE7516C1A63100EC2D36 /* Default.png */; };
 		90E9BE7816C1A63100EC2D36 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90E9BE7716C1A63100EC2D36 /* Default@2x.png */; };
 		90E9BE7A16C1A63100EC2D36 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90E9BE7916C1A63100EC2D36 /* Default-568h@2x.png */; };
+		90E9BE8116C1A81F00EC2D36 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E9BE8016C1A81F00EC2D36 /* Social.framework */; };
+		90E9BE8316C1A86100EC2D36 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E9BE8216C1A86100EC2D36 /* Accounts.framework */; };
+		90E9BE8516C1A86900EC2D36 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E9BE8416C1A86900EC2D36 /* QuartzCore.framework */; };
+		90E9BE8716C1A8F200EC2D36 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E9BE8616C1A8F200EC2D36 /* MainStoryboard.storyboard */; };
+		90E9BE8A16C1BEE000EC2D36 /* UsernameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E9BE8916C1BEE000EC2D36 /* UsernameViewController.m */; };
+		90E9BE9016C1C13500EC2D36 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E9BE8F16C1C13500EC2D36 /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		90E9BE6016C1A63100EC2D36 /* Twitter Profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twitter Profile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E9BE6016C1A63100EC2D36 /* Tweme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tweme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E9BE6316C1A63100EC2D36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		90E9BE6516C1A63100EC2D36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		90E9BE6716C1A63100EC2D36 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		90E9BE6B16C1A63100EC2D36 /* Twitter Profile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Twitter Profile-Info.plist"; sourceTree = "<group>"; };
+		90E9BE6B16C1A63100EC2D36 /* Tweme-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tweme-Info.plist"; sourceTree = "<group>"; };
 		90E9BE6D16C1A63100EC2D36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		90E9BE6F16C1A63100EC2D36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		90E9BE7116C1A63100EC2D36 /* Twitter Profile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Twitter Profile-Prefix.pch"; sourceTree = "<group>"; };
+		90E9BE7116C1A63100EC2D36 /* Tweme-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tweme-Prefix.pch"; sourceTree = "<group>"; };
 		90E9BE7216C1A63100EC2D36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		90E9BE7316C1A63100EC2D36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		90E9BE7516C1A63100EC2D36 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		90E9BE7716C1A63100EC2D36 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		90E9BE7916C1A63100EC2D36 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		90E9BE8016C1A81F00EC2D36 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		90E9BE8216C1A86100EC2D36 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		90E9BE8416C1A86900EC2D36 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		90E9BE8616C1A8F200EC2D36 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		90E9BE8816C1BEE000EC2D36 /* UsernameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsernameViewController.h; sourceTree = "<group>"; };
+		90E9BE8916C1BEE000EC2D36 /* UsernameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsernameViewController.m; sourceTree = "<group>"; };
+		90E9BE8E16C1C13500EC2D36 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		90E9BE8F16C1C13500EC2D36 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E9BE8516C1A86900EC2D36 /* QuartzCore.framework in Frameworks */,
+				90E9BE8316C1A86100EC2D36 /* Accounts.framework in Frameworks */,
+				90E9BE8116C1A81F00EC2D36 /* Social.framework in Frameworks */,
 				90E9BE6416C1A63100EC2D36 /* UIKit.framework in Frameworks */,
 				90E9BE6616C1A63100EC2D36 /* Foundation.framework in Frameworks */,
 				90E9BE6816C1A63100EC2D36 /* CoreGraphics.framework in Frameworks */,
@@ -60,7 +77,7 @@
 		90E9BE6116C1A63100EC2D36 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				90E9BE6016C1A63100EC2D36 /* Twitter Profile.app */,
+				90E9BE6016C1A63100EC2D36 /* Tweme.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +85,9 @@
 		90E9BE6216C1A63100EC2D36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90E9BE8416C1A86900EC2D36 /* QuartzCore.framework */,
+				90E9BE8216C1A86100EC2D36 /* Accounts.framework */,
+				90E9BE8016C1A81F00EC2D36 /* Social.framework */,
 				90E9BE6316C1A63100EC2D36 /* UIKit.framework */,
 				90E9BE6516C1A63100EC2D36 /* Foundation.framework */,
 				90E9BE6716C1A63100EC2D36 /* CoreGraphics.framework */,
@@ -80,7 +100,12 @@
 			children = (
 				90E9BE7216C1A63100EC2D36 /* AppDelegate.h */,
 				90E9BE7316C1A63100EC2D36 /* AppDelegate.m */,
+				90E9BE8816C1BEE000EC2D36 /* UsernameViewController.h */,
+				90E9BE8916C1BEE000EC2D36 /* UsernameViewController.m */,
+				90E9BE8E16C1C13500EC2D36 /* ProfileViewController.h */,
+				90E9BE8F16C1C13500EC2D36 /* ProfileViewController.m */,
 				90E9BE6A16C1A63100EC2D36 /* Supporting Files */,
+				90E9BE8616C1A8F200EC2D36 /* MainStoryboard.storyboard */,
 			);
 			path = "Twitter Profile";
 			sourceTree = "<group>";
@@ -88,10 +113,10 @@
 		90E9BE6A16C1A63100EC2D36 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				90E9BE6B16C1A63100EC2D36 /* Twitter Profile-Info.plist */,
+				90E9BE6B16C1A63100EC2D36 /* Tweme-Info.plist */,
 				90E9BE6C16C1A63100EC2D36 /* InfoPlist.strings */,
 				90E9BE6F16C1A63100EC2D36 /* main.m */,
-				90E9BE7116C1A63100EC2D36 /* Twitter Profile-Prefix.pch */,
+				90E9BE7116C1A63100EC2D36 /* Tweme-Prefix.pch */,
 				90E9BE7516C1A63100EC2D36 /* Default.png */,
 				90E9BE7716C1A63100EC2D36 /* Default@2x.png */,
 				90E9BE7916C1A63100EC2D36 /* Default-568h@2x.png */,
@@ -102,9 +127,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		90E9BE5F16C1A63100EC2D36 /* Twitter Profile */ = {
+		90E9BE5F16C1A63100EC2D36 /* Tweme */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 90E9BE7D16C1A63100EC2D36 /* Build configuration list for PBXNativeTarget "Twitter Profile" */;
+			buildConfigurationList = 90E9BE7D16C1A63100EC2D36 /* Build configuration list for PBXNativeTarget "Tweme" */;
 			buildPhases = (
 				90E9BE5C16C1A63100EC2D36 /* Sources */,
 				90E9BE5D16C1A63100EC2D36 /* Frameworks */,
@@ -114,9 +139,9 @@
 			);
 			dependencies = (
 			);
-			name = "Twitter Profile";
+			name = Tweme;
 			productName = "Twitter Profile";
-			productReference = 90E9BE6016C1A63100EC2D36 /* Twitter Profile.app */;
+			productReference = 90E9BE6016C1A63100EC2D36 /* Tweme.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,9 +151,9 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "Jeroen van Rijn";
+				ORGANIZATIONNAME = "Veeral Patel";
 			};
-			buildConfigurationList = 90E9BE5B16C1A63100EC2D36 /* Build configuration list for PBXProject "Twitter Profile" */;
+			buildConfigurationList = 90E9BE5B16C1A63100EC2D36 /* Build configuration list for PBXProject "Tweme" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -140,7 +165,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				90E9BE5F16C1A63100EC2D36 /* Twitter Profile */,
+				90E9BE5F16C1A63100EC2D36 /* Tweme */,
 			);
 		};
 /* End PBXProject section */
@@ -154,6 +179,7 @@
 				90E9BE7616C1A63100EC2D36 /* Default.png in Resources */,
 				90E9BE7816C1A63100EC2D36 /* Default@2x.png in Resources */,
 				90E9BE7A16C1A63100EC2D36 /* Default-568h@2x.png in Resources */,
+				90E9BE8716C1A8F200EC2D36 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +192,8 @@
 			files = (
 				90E9BE7016C1A63100EC2D36 /* main.m in Sources */,
 				90E9BE7416C1A63100EC2D36 /* AppDelegate.m in Sources */,
+				90E9BE8A16C1BEE000EC2D36 /* UsernameViewController.m in Sources */,
+				90E9BE9016C1C13500EC2D36 /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,8 +271,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Twitter Profile/Twitter Profile-Prefix.pch";
-				INFOPLIST_FILE = "Twitter Profile/Twitter Profile-Info.plist";
+				GCC_PREFIX_HEADER = "Twitter Profile/Tweme-Prefix.pch";
+				INFOPLIST_FILE = "Twitter Profile/Tweme-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -254,8 +282,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Twitter Profile/Twitter Profile-Prefix.pch";
-				INFOPLIST_FILE = "Twitter Profile/Twitter Profile-Info.plist";
+				GCC_PREFIX_HEADER = "Twitter Profile/Tweme-Prefix.pch";
+				INFOPLIST_FILE = "Twitter Profile/Tweme-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -264,7 +292,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		90E9BE5B16C1A63100EC2D36 /* Build configuration list for PBXProject "Twitter Profile" */ = {
+		90E9BE5B16C1A63100EC2D36 /* Build configuration list for PBXProject "Tweme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90E9BE7B16C1A63100EC2D36 /* Debug */,
@@ -273,13 +301,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		90E9BE7D16C1A63100EC2D36 /* Build configuration list for PBXNativeTarget "Twitter Profile" */ = {
+		90E9BE7D16C1A63100EC2D36 /* Build configuration list for PBXNativeTarget "Tweme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90E9BE7E16C1A63100EC2D36 /* Debug */,
 				90E9BE7F16C1A63100EC2D36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

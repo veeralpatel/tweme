@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  Twitter Profile
 //
-//  Created by Jeroen van Rijn on 05-02-13.
-//  Copyright (c) 2013 Jeroen van Rijn. All rights reserved.
+//  Created by Veeral Patel on 05-02-13.
+//  Copyright (c) 2013 Veeral Patel. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -12,10 +12,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
     return YES;
 }
 
