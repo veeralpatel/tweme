@@ -35,13 +35,30 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     NSLog(@"You entered %@",self.topInput.text);
+    NSLog(@"You entered %@",self.bottomInput.text);
     
-    topCaption.text = self.topInput.text;
-    bottomCaption.text = self.bottomInput.text;
+    topCaption.text = [self.topInput.text uppercaseString];
+    bottomCaption.text = [self.bottomInput.text uppercaseString];
     
     [self.topInput resignFirstResponder];
     [self.bottomInput resignFirstResponder];
+    
+    [bottomCaption addObserver:self forKeyPath:@"contentSize" options:(NSKeyValueObservingOptionNew) context:NULL];
+    
     return YES;
+}
+
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    UITextView *tv = object;
+    //Center vertical alignment
+    //CGFloat topCorrect = ([tv bounds].size.height - [tv contentSize].height * [tv zoomScale])/2.0;
+    //topCorrect = ( topCorrect < 0.0 ? 0.0 : topCorrect );
+    //tv.contentOffset = (CGPoint){.x = 0, .y = -topCorrect};
+    
+    //Bottom vertical alignment
+    CGFloat topCorrect = ([tv bounds].size.height - [tv contentSize].height);
+    topCorrect = (topCorrect <0.0 ? 0.0 : topCorrect);
+    tv.contentOffset = (CGPoint){.x = 0, .y = -topCorrect};
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,6 +66,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 - (void) getInfo
 {

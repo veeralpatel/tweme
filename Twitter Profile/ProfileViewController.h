@@ -18,8 +18,8 @@
     IBOutlet UITextField *topInput;
     IBOutlet UITextField *bottomInput;
     
-    IBOutlet UILabel *topCaption;
-    IBOutlet UILabel *bottomCaption;
+    IBOutlet UITextView *topCaption;
+    IBOutlet UITextView *bottomCaption;
     
     IBOutlet UILabel *usernameLabel;
 
