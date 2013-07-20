@@ -22,6 +22,8 @@
 		90E9BE8716C1A8F200EC2D36 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E9BE8616C1A8F200EC2D36 /* MainStoryboard.storyboard */; };
 		90E9BE8A16C1BEE000EC2D36 /* UsernameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E9BE8916C1BEE000EC2D36 /* UsernameViewController.m */; };
 		90E9BE9016C1C13500EC2D36 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E9BE8F16C1C13500EC2D36 /* ProfileViewController.m */; };
+		F1BAF194179B1D160063957F /* impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1BAF193179B1D160063957F /* impact.ttf */; };
+		F1BAF199179B1DA30063957F /* FXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BAF198179B1DA30063957F /* FXLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,8 +48,9 @@
 		90E9BE8916C1BEE000EC2D36 /* UsernameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsernameViewController.m; sourceTree = "<group>"; };
 		90E9BE8E16C1C13500EC2D36 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		90E9BE8F16C1C13500EC2D36 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
-		F1769D5F179B152E00AC6FB2 /* FXLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXLabel.h; sourceTree = "<group>"; };
-		F1769D60179B152E00AC6FB2 /* FXLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXLabel.m; sourceTree = "<group>"; };
+		F1BAF193179B1D160063957F /* impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = impact.ttf; path = "Twitter Profile/impact.ttf"; sourceTree = "<group>"; };
+		F1BAF197179B1DA30063957F /* FXLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXLabel.h; sourceTree = "<group>"; };
+		F1BAF198179B1DA30063957F /* FXLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +73,8 @@
 		90E9BE5716C1A63100EC2D36 = {
 			isa = PBXGroup;
 			children = (
-				F1769D5E179B152E00AC6FB2 /* FXLabel */,
+				F1BAF196179B1DA30063957F /* FXLabel */,
+				F1BAF193179B1D160063957F /* impact.ttf */,
 				90E9BE6916C1A63100EC2D36 /* Twitter Profile */,
 				90E9BE6216C1A63100EC2D36 /* Frameworks */,
 				90E9BE6116C1A63100EC2D36 /* Products */,
@@ -127,14 +131,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F1769D5E179B152E00AC6FB2 /* FXLabel */ = {
+		F1BAF196179B1DA30063957F /* FXLabel */ = {
 			isa = PBXGroup;
 			children = (
-				F1769D5F179B152E00AC6FB2 /* FXLabel.h */,
-				F1769D60179B152E00AC6FB2 /* FXLabel.m */,
+				F1BAF197179B1DA30063957F /* FXLabel.h */,
+				F1BAF198179B1DA30063957F /* FXLabel.m */,
 			);
-			name = FXLabel;
-			path = "Twitter Profile/FXLabel";
+			path = FXLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +193,7 @@
 			files = (
 				90E9BE6E16C1A63100EC2D36 /* InfoPlist.strings in Resources */,
 				90E9BE7616C1A63100EC2D36 /* Default.png in Resources */,
+				F1BAF194179B1D160063957F /* impact.ttf in Resources */,
 				90E9BE7816C1A63100EC2D36 /* Default@2x.png in Resources */,
 				90E9BE7A16C1A63100EC2D36 /* Default-568h@2x.png in Resources */,
 				90E9BE8716C1A8F200EC2D36 /* MainStoryboard.storyboard in Resources */,
@@ -206,6 +210,7 @@
 				90E9BE7016C1A63100EC2D36 /* main.m in Sources */,
 				90E9BE7416C1A63100EC2D36 /* AppDelegate.m in Sources */,
 				90E9BE8A16C1BEE000EC2D36 /* UsernameViewController.m in Sources */,
+				F1BAF199179B1DA30063957F /* FXLabel.m in Sources */,
 				90E9BE9016C1C13500EC2D36 /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

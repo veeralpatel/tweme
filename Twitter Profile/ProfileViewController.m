@@ -28,6 +28,32 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    topText = [[FXLabel alloc] initWithFrame:CGRectMake(0, 0, 300, 100)];
+    topText.font = [UIFont fontWithName:@"Impact" size:40];
+    topText.textColor = [UIColor whiteColor];
+    topText.numberOfLines = 2;
+    topText.innerShadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0];
+    topText.innerShadowOffset = CGSizeMake(1.0f, 1.0f);
+    topText.layer.shadowOffset = CGSizeMake(0, 2);
+    topText.textAlignment = NSTextAlignmentCenter;
+    topText.layer.shadowColor = [UIColor blackColor].CGColor;
+    topText.layer.shadowOpacity = 1.0;
+    topText.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:topText];
+    
+    bottomText = [[FXLabel alloc] initWithFrame:CGRectMake(0, 0, 300, 320)];
+    bottomText.font = [UIFont fontWithName:@"Impact" size:40];
+    bottomText.textColor = [UIColor whiteColor];
+    bottomText.numberOfLines = 2;
+    bottomText.innerShadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0];
+    bottomText.innerShadowOffset = CGSizeMake(1.0f, 1.0f);
+    bottomText.layer.shadowOffset = CGSizeMake(0, 2);
+    bottomText.textAlignment = NSTextAlignmentCenter;
+    bottomText.layer.shadowColor = [UIColor blackColor].CGColor;
+    bottomText.layer.shadowOpacity = 1.0;
+    bottomText.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:bottomText];
 
     [self getInfo];
 }
@@ -37,28 +63,13 @@
     NSLog(@"You entered %@",self.topInput.text);
     NSLog(@"You entered %@",self.bottomInput.text);
     
-    topCaption.text = [self.topInput.text uppercaseString];
-    bottomCaption.text = [self.bottomInput.text uppercaseString];
+    topText.text = [self.topInput.text uppercaseString];
+    bottomText.text = [self.bottomInput.text uppercaseString];
     
     [self.topInput resignFirstResponder];
     [self.bottomInput resignFirstResponder];
     
-    [bottomCaption addObserver:self forKeyPath:@"contentSize" options:(NSKeyValueObservingOptionNew) context:NULL];
-    
     return YES;
-}
-
--(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-    UITextView *tv = object;
-    //Center vertical alignment
-    //CGFloat topCorrect = ([tv bounds].size.height - [tv contentSize].height * [tv zoomScale])/2.0;
-    //topCorrect = ( topCorrect < 0.0 ? 0.0 : topCorrect );
-    //tv.contentOffset = (CGPoint){.x = 0, .y = -topCorrect};
-    
-    //Bottom vertical alignment
-    CGFloat topCorrect = ([tv bounds].size.height - [tv contentSize].height);
-    topCorrect = (topCorrect <0.0 ? 0.0 : topCorrect);
-    tv.contentOffset = (CGPoint){.x = 0, .y = -topCorrect};
 }
 
 - (void)didReceiveMemoryWarning

@@ -10,6 +10,7 @@
 #import <Accounts/Accounts.h>
 #import <Social/Social.h>
 #import <QuartzCore/QuartzCore.h>
+#import "FXLabel.h"
 
 @interface ProfileViewController : UIViewController <UITextFieldDelegate>
 {
@@ -18,7 +19,8 @@
     IBOutlet UITextField *topInput;
     IBOutlet UITextField *bottomInput;
     
-
+    IBOutlet FXLabel *topText;
+    IBOutlet FXLabel *bottomText;
     
     IBOutlet UILabel *usernameLabel;
 
@@ -28,5 +30,8 @@
 @property (nonatomic, retain) NSString *username;
 @property (strong, nonatomic) IBOutlet UITextField *topInput;
 @property (strong, nonatomic) IBOutlet UITextField *bottomInput;
+@property (strong, nonatomic) IBOutlet FXLabel *topText;
+@property (strong, nonatomic) IBOutlet FXLabel *bottomText;
+
 
 @end
