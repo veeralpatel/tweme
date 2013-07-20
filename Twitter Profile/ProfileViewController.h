@@ -22,6 +22,8 @@
     IBOutlet FXLabel *topText;
     IBOutlet FXLabel *bottomText;
     
+    IBOutlet UISlider *textSize;
+    
     IBOutlet UILabel *usernameLabel;
 
     NSString *username;
@@ -32,6 +34,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *bottomInput;
 @property (strong, nonatomic) IBOutlet FXLabel *topText;
 @property (strong, nonatomic) IBOutlet FXLabel *bottomText;
+@property (strong, nonatomic) IBOutlet UISlider *textSize;
 
 
 @end

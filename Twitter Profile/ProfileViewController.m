@@ -29,8 +29,7 @@
 {
     [super viewDidLoad];
     
-    topText = [[FXLabel alloc] initWithFrame:CGRectMake(0, 0, 300, 100)];
-    topText.font = [UIFont fontWithName:@"Impact" size:40];
+    topText = [[FXLabel alloc] initWithFrame:CGRectMake(0, 0, 320, 150)];
     topText.textColor = [UIColor whiteColor];
     topText.numberOfLines = 2;
     topText.innerShadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0];
@@ -42,8 +41,7 @@
     topText.backgroundColor = [UIColor clearColor];
     [self.view addSubview:topText];
     
-    bottomText = [[FXLabel alloc] initWithFrame:CGRectMake(0, 0, 300, 320)];
-    bottomText.font = [UIFont fontWithName:@"Impact" size:40];
+    bottomText = [[FXLabel alloc] initWithFrame:CGRectMake(0, 0, 320, 620)];
     bottomText.textColor = [UIColor whiteColor];
     bottomText.numberOfLines = 2;
     bottomText.innerShadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0];
@@ -55,8 +53,25 @@
     bottomText.backgroundColor = [UIColor clearColor];
     [self.view addSubview:bottomText];
 
+    textSize.minimumValue = 10;
+    textSize.maximumValue = 40;
+    textSize.continuous = YES;
+    
     [self getInfo];
 }
+
+- (IBAction)sliderChanged:(id)sender
+{
+    UISlider *slider = (UISlider *)sender;
+    NSInteger val = lround(slider.value);
+    topText.font = [UIFont fontWithName:@"Impact" size:val];
+    bottomText.font = [UIFont fontWithName:@"Impact" size:val];
+    
+    textSize.minimumValue = 10;
+    textSize.maximumValue = 40;
+    textSize.continuous = YES;
+}
+
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
