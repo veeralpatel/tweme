@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
     
-    topText = [[FXLabel alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    topText = [[FXLabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
     topText.textColor = [UIColor whiteColor];
     topText.numberOfLines = 2;
     topText.innerShadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0];
@@ -41,7 +41,7 @@
     topText.backgroundColor = [UIColor clearColor];
     [self->profileImageView addSubview:topText];
     
-    bottomText = [[FXLabel alloc] initWithFrame:CGRectMake(0, 0, 320, 520)];
+    bottomText = [[FXLabel alloc] initWithFrame:CGRectMake(0, 218, 320, 100)];
     bottomText.textColor = [UIColor whiteColor];
     bottomText.numberOfLines = 2;
     bottomText.innerShadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0];

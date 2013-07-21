@@ -66,6 +66,7 @@
         <!--Profile View Controller - Caption-->
         <scene sceneID="ghh-Kb-NHp">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1dw-SI-IKn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="xoW-ci-mKL" customClass="ProfileViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Vh-mS-Uzz">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
@@ -106,7 +107,7 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Caption" id="bBH-1n-kox">
-                        <barButtonItem key="rightBarButtonItem" title="Save" systemItem="save" id="Q9x-IQ-u5b">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="Q9x-IQ-u5b">
                             <connections>
                                 <action selector="saveMeme" destination="xoW-ci-mKL" id="5A0-av-CaX"/>
                             </connections>
@@ -119,7 +120,6 @@
                         <outlet property="topInput" destination="9ZJ-wX-6XV" id="T3U-Vq-1Mi"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1dw-SI-IKn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="580" y="100"/>
         </scene>
