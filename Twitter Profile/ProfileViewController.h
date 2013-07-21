@@ -36,5 +36,7 @@
 @property (strong, nonatomic) IBOutlet FXLabel *bottomText;
 @property (strong, nonatomic) IBOutlet UISlider *textSize;
 
+-(IBAction)saveMeme;
+
 
 @end

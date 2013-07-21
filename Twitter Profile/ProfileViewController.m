@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
     
-    topText = [[FXLabel alloc] initWithFrame:CGRectMake(0, 0, 320, 150)];
+    topText = [[FXLabel alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
     topText.textColor = [UIColor whiteColor];
     topText.numberOfLines = 2;
     topText.innerShadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0];
@@ -39,9 +39,9 @@
     topText.layer.shadowColor = [UIColor blackColor].CGColor;
     topText.layer.shadowOpacity = 1.0;
     topText.backgroundColor = [UIColor clearColor];
-    [self.view addSubview:topText];
+    [self->profileImageView addSubview:topText];
     
-    bottomText = [[FXLabel alloc] initWithFrame:CGRectMake(0, 0, 320, 620)];
+    bottomText = [[FXLabel alloc] initWithFrame:CGRectMake(0, 0, 320, 520)];
     bottomText.textColor = [UIColor whiteColor];
     bottomText.numberOfLines = 2;
     bottomText.innerShadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0];
@@ -51,25 +51,30 @@
     bottomText.layer.shadowColor = [UIColor blackColor].CGColor;
     bottomText.layer.shadowOpacity = 1.0;
     bottomText.backgroundColor = [UIColor clearColor];
-    [self.view addSubview:bottomText];
-
-    textSize.minimumValue = 10;
-    textSize.maximumValue = 40;
-    textSize.continuous = YES;
+    [self->profileImageView addSubview:bottomText];
     
     [self getInfo];
 }
 
-- (IBAction)sliderChanged:(id)sender
+-(IBAction)saveMeme
 {
-    UISlider *slider = (UISlider *)sender;
-    NSInteger val = lround(slider.value);
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)]) {
+        UIGraphicsBeginImageContextWithOptions(profileImageView.bounds.size, NO, [UIScreen mainScreen].scale);
+    } else {
+        UIGraphicsBeginImageContext(profileImageView.frame.size);
+    }
+    
+	[profileImageView.layer renderInContext:UIGraphicsGetCurrentContext()];
+	UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
+	UIImageWriteToSavedPhotosAlbum(viewImage, nil, nil, nil);
+}
+
+-(IBAction)sliderValueChanged:(UISlider *)sender
+{
+    NSInteger val = lround(sender.value);
     topText.font = [UIFont fontWithName:@"Impact" size:val];
     bottomText.font = [UIFont fontWithName:@"Impact" size:val];
-    
-    textSize.minimumValue = 10;
-    textSize.maximumValue = 40;
-    textSize.continuous = YES;
 }
 
 
