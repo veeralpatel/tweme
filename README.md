@@ -3,4 +3,4 @@ tweme
 
 Make memes with your friends' Twitter icons.
 
-![Screenshots](https://http://d.pr/i/Ow9B)
+![Screenshots](https://d.pr/i/Ow9B)
